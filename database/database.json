@@ -1,0 +1,38 @@
+[
+   {
+      "id": "6ef8c393-2336-46a4-acda-3ee1edc5508b",
+      "fullname": "augutine benjamin",
+      "email": "augustinejannet@yahoo.com",
+      "gender": "f",
+      "phone": "+234818527890",
+      "address": "Toronto",
+      "notes": "Owing 100,000"
+   },
+   {
+      "id": "b809d3be-4b28-4fdd-95ea-cb449e7e9d73",
+      "fullname": "benjamin effiong",
+      "email": "benneffiong@gmail.com",
+      "gender": "m",
+      "phone": "+13545633442",
+      "address": "Abuja",
+      "notes": "Owing  #1000"
+   },
+   {
+      "id": "474489f3-43c1-4005-bd48-96abb0af3b89",
+      "fullname": "Christain Grey",
+      "email": "christaingrey@yahoo.com",
+      "gender": "m",
+      "phone": "+234908880221",
+      "address": "Chicago",
+      "notes": "Owing 5000"
+   },
+   {
+      "id": "b12eef5d-fab0-4721-96d4-dcd38127cf99",
+      "fullname": "Edobor Benson",
+      "email": "edoborbenson@gmail.com",
+      "gender": "M",
+      "phone": "08104573636",
+      "address": "Madrid",
+      "notes": "Not owing"
+   }
+]

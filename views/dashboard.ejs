@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %> 
+    <title>CRM Portal | <%= title %></title>
+
+<body>
+<%- include('./partials/nav.ejs') %>
+<div class="container-fluid">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">Notes</th>
+                <th scope="col">Delete Customer</th>
+                <th scope="col">Update Customer</th>
+                <th scope="col">Get Customer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if(customers)  { %>
+                <% customers.forEach(customer =>  { %>
+                    <tr>
+                        <th scope="row"><%= customer.id %></th>
+                        <td><%= customer.fullname %></td>
+                        <td><%= customer.email %></td>
+                        <td><%= customer.gender %></td>
+                        <td><%= customer.phone %></td>
+                        <td><%= customer.address %></td>
+                        <td><%= customer.notes %></td>
+                        <td><a  href="/customers/delete/<%= customer.id %>"> Delete </a></td>
+                        <td><a  href="/customers/update/<%= customer.id %>"> Update </a></td>
+                        <td><a  href="/customers/<%= customer.id %>"> Select </a></td>
+                    </tr>
+                <% }) %>
+            <% } %>
+        </tbody>
+    </table>
+</div>
+<div>
+    <a class="btn btn-outline-primary" href="/customers/add">Add Customer</a>
+  </div>
+
+
+<%- include('./partials/footer.ejs') %>
+</body>
+</html>  
+

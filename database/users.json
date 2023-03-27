@@ -1,0 +1,32 @@
+[
+   {
+      "name": "benjamin effiong",
+      "email": "benneffiong@gmail.com",
+      "password": "$2a$10$.TISJecT19hetg7Hy3IFkekiCGiShfMu6nQgxhznBXMv70.08an7e"
+   },
+   {
+      "name": "augutine benjamin",
+      "email": "augustinejannet@yahoo.com",
+      "password": "$2a$10$gKbvztShZYe1tXj92/Doz.10A9dLT0e3aFSb0d.ll2CefveuR3xJ."
+   },
+   {
+      "name": "john doe",
+      "email": "john@example.com",
+      "password": "$2a$10$YL3/uhTCssleR2Fbavnpiem63C04UWaDgn2qFAnCHL8pCBc1AQuq."
+   },
+   {
+      "name": "Christian Grey",
+      "email": "christaingrey@yahoo.com",
+      "password": "$2a$10$7VQjbFPKoESJcrCDc7C2Cu.daQTYIKQgiiOYDqjo46ZwZgrCJAB8S"
+   },
+   {
+      "name": "Akem",
+      "email": "akemini.ndaobong@gmail.com",
+      "password": "$2a$10$MoT27npI2N/YTnM77BpzA.VnQyPoK9CGmIZ6YtKEGO9hE9O86Xbs2"
+   },
+   {
+      "name": "Eddie benn",
+      "email": "benn@gmail.com",
+      "password": "$2a$10$r1F4fUOq7FzKTBcdQRKUOOGU8uKzQFVaGKZkdsZhS0944f1F9dXma"
+   }
+]

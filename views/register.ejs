@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+    <title>CRM Portal | <%= title %></title>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="container-fluid">
+        <div class="col text-center py-3">
+            <h1>Register</h1>
+        </div>
+            <div class="row g-6">
+                <div class="col-6 offset-3 border-secondary shadow py-3 px-5 rounded">
+                    <form action="/users/register" method="POST">
+                        <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label><br>
+                        <input type="text" class="form-control w-100" name="name" id="name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="email" class="form-control w-100" name="email" id="email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password</label><br>
+                            <input type="password" class="form-control w-100" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password1" class="form-label">Confirm Password</label><br>
+                            <input type="password" class="form-control w-100" name="password1" id="password1" required>
+                        </div><br>
+                        <div class="form-group mb-3">
+                            <div class="text-center">
+                                <button type="submit" id="submit" class="btn btn-primary w-25">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       
+
+ 
+
+
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

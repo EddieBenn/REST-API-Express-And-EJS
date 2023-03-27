@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+    <title>CRM Portal | <%= title %></title>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="container-fluid">
+        <div class="col text-center py-3">
+            <h1>Delete Customer</h1>
+        </div>
+            <div class="row g-6">
+                <div class="col-6 offset-3 border-secondary shadow py-3 px-5 rounded">
+                    <form action="/customers/delete/<%= user.id %>?_method=DELETE" method="POST">
+                        <div class="card text-center">
+                            <div class="card-header">
+                              Administrative Panel
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Delete <%= user.fullname %>'s Record </h5>
+                              <p class="card-text">Deleting customer records must be approved by your Line Manager!!.</p>
+                              <div class="form-group mb-3">
+                                <div class="text-center">
+                                  <input type="submit" class="btn btn-primary" id="submit" value="Delete">
+                                  <a href="/customers" class="btn btn-primary">Back</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Administrator: <%= user.fullname %>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           
+    
+     
+    
+    
+    
+        <%- include('./partials/footer.ejs') %>
+    </body>
+    </html>
+                        

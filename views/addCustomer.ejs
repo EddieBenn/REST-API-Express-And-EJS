@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+    <title>CRM Portal | <%= title %></title>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="container-fluid">
+        <div class="col text-center py-3">
+            <h1>Add Customer</h1>
+        </div>
+            <div class="row g-6">
+                <div class="col-6 offset-3 border-secondary shadow py-3 px-5 rounded">
+                    <form action="/customers/add" method="POST">
+                        <div class="form-group mb-3">
+                        <label for="fullname" class="form-label">Fullname</label><br>
+                        <input type="text" class="form-control w-100" name="fullname" id="fullname" required>
+                        </div>
+                        <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="email" class="form-control w-100" name="email" id="email" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="gender" class="form-label">Gender</label><br>
+                            <input type="text" class="form-control w-100" name="gender" id="gender" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label><br>
+                            <input type="text" class="form-control w-100" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="address" class="form-label">Address</label><br>
+                            <input type="text" class="form-control w-100" name="address" id="address" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="notes" class="form-label">Notes</label><br>
+                            <textarea type="text" class="form-control w-100" name="notes" id="notes" required></textarea>
+                        </div><br>
+                        <div class="form-group mb-3">
+                            <div class="text-center">
+                                <input type="submit" id="submit" class="btn btn-primary w-25" value="Add Customer">
+                                <a href="/customers" class="btn btn-primary w-25">Back</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       
+
+ 
+
+
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
